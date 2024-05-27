@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="estilos.css">
+  <title>Página de Tecnología</title>
+
+   </head>
+
+   <body>
+
+     <header>
+      <img src="imagenes/cabecera.jpg" alt="Cabecera de la página"> 
+     </header>
+     <nav>
+          <ul>
+  <li><a class="active" href="index.html">Inicio</a></li>
+  <li><a href="juguete.html">Juguete</a></li>
+  <li><a href="semaforo.html">Semaforo</a></li>
+</ul>        
+
+     </nav>
+     <article>
+       <section>
+        <div>
+       <h1>  BÚSQUEDA DE INFORMACIÓN </h1>
+       <p> 1- Tipos de semáforos </p>
+       <ul>
+        <li>El semáforo peatonal. </li>
+        
+        <li>Semáforos reservados a determinados vehículos. </li>
+        
+        <li>Los semáforos inteligentes.</li>
+        <li>Semáforos con cámara.</li>
+        <li>Semáforo con amarillo intermitente.</li>
+        <li>Semáforo para tranvía.  </li>
+        <li>Semáforos de carril.</li>
+        <li>Semáforo ámbar como reductor de velocidad.</li>
+        <h1> CÓMO FUNCIONAN LOS SEMÁFOROS</h1>
+    </ul>
+
+       <p>Un semáforo funciona de forma que se encienden primero el rojo, luego el verde, y por
+        último el amarillo. Después volvería a empezar por el rojo.
+        Para programar nuestro semáforo no necesitamos ningún bloque que no hayamos usado
+        antes. La única novedad será elegir en el bloque “digital encendido” y “digital apagado” la
+        salida digital que queramos utilizar.</p>
+        <img src="imagenes/imagen3.png" alt="Imagen 3">
+        <p>Comenzaremos el programa con los mismos bloques de control que comenzamos la
+          práctica anterior, ya que queremos que el semáforo funcione continuamente mientras
+          esté pulsada la bandera verde.</p>
+        <p>Lo primero que queremos hacer es que se encienda el LED rojo durante 3 segundos y
+            después se apague. Como es el que hemos conectado a la salida digital 13,
+            seleccionaremos esa salida en los bloques de “Movimiento” de encender y apagar.
+            En el bloque de “Control” de “esperar” le ponemos 3 segundos.</p>
+            <img src="imagenes/imagen4.png" alt="Imagen 4">
+
+        <p>No queremos que pase tiempo entre que se apague el LED rojo y se encienda el amarillo.
+              Por eso no necesitamos poner otro bloque de “esperar” después de apagar.
+              Hacemos los mismo para el LED verde (pin digital 10) y para el amarillo (pin digital 11),
+              con la excepción de que el amarillo solo queremos que este encendido 1 segundo.</p>
+              <img src="imagenes/imagen5.png" alt="Imagen 5">
+
+        <p>Si damos a la bandera verde para ejecutar el programa, veremos cómo funciona nuestro
+                propio semáforo en la placa Arduino.
+                En la sesión anterior vimos cómo conectar correctamente un LED. Ahora vamos a
+                complicar un poco el circuito conectando tres diodos LED que se encenderán y apagarán
+                para construir nuestro propio semáforo.</p>
+                <img src="imagenes/imagen6.png" alt="Imagen 6">
+
+
+         <p> Hemos conectado cada uno de los diodos LED a diferentes salidas digitales para poder
+          gobernarlos de forma independiente.
+          Sólo necesitamos una resistencia porque está en serie con los tres diodos. La corriente
+          que circule por cualquiera de ellos lo hará también por la resistencia, de forma que
+          protegerá a los tres de quemarse.
+          Cerramos el circuito conectando la resistencia a GND.
+          En general, se considera buena costumbre (la recomendamos), montar los circuitos que
+          veamos a partir del esquema electrónico del mismo, más que a partir del diagrama de
+          conexiones de la protoboard.
+          La razón es que con el esquema, la comprensión del circuito es completa y se evita la
+          tentación de copiar la práctica sin necesidad de entenderla.
+          Además, el diagrama electrónico del circuito es su completa descripción y suele resultar
+          más sencillo comprender la función del mismo. En cambio a medida que los circuitos se
+          hacen más complejos, comprender su función desde un esquema de protoboard puede
+          complicarse mucho, y peor aún, llevar a una interpretación errónea.</p>       
+          <img src="imagenes/imagen 3.jpg" alt="Imagen 3"> 
+          <img src="imagenes/imagen 4.jpg" alt="Imagen 4"> 
+
+
+
+        </div>
+       </section>
+    </article>
+    <aside>
+      <div>
+        <a href="https://ieslaflorida.murciaeduca.es/"> <img src="imagenes/logo.png" alt="IES La Florida"> </a> 
+        <a href="https://mirador.murciaeduca.es/mirador/"> <img src="imagenes/mirador.jpg" alt="Página Mirador"> </a> 
+        <a href="https://www.carm.es/web/pagina?IDCONTENIDO=2015&IDTIPO=100&RASTRO=c$m122,123,1987"> <img src="imagenes/carm.jpg" alt="Página Educación"> </a> 
+
+      </div>
+    </aside>
+    <footer>
+      <div>
+        <p>
+          Esta página está hecha por Paula Soler
+        </p>
+<p>
+  © 2024. Este trabajo tiene licencia abierta a través de CC BY 4.0 .
+</p>
+      </div>
+
+    </footer>
+
+
+   </body>
+
+</html>
+
